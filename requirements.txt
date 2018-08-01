@@ -1,0 +1,3 @@
+telegrambot
+requests
+tts
