@@ -1,1 +1,1 @@
-worker: python magghybot.py
+worker: python newsbot.py
