@@ -24,13 +24,13 @@ def message(bot, update):
     print('Received an update')
     global context
 
-    conversation = ConversationV1(username='9274f5a8-2981-49b1-a1e6-65b135a7d8ca',  # TODO
-                                  password='4qWyS45jQ0Pa',  # TODO
+    conversation = ConversationV1(username='161a18e1-8ddc-404c-894b-26470e295d90',  # TODO
+                                  password='d07Jb1MQduZM',  # TODO
                                   version='2018-02-16')
 
     # get response from watson
     response = conversation.message(
-        workspace_id='29b8a646-ec56-41ac-92cd-9050358069a9',  # TODO
+        workspace_id='0cc6da39-2d3a-4848-807b-bac40520c026',  # TODO
         input={'text': update.message.text},
         context=context)
     print(json.dumps(response, indent=2))
