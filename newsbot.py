@@ -89,7 +89,7 @@ def message(bot, update):
             print(res)
             we = response['input']['text']
             n = requests.get(
-                'http://api.openweathermap.org/data/2.5/weather?q=' + we + ',ru&appid=ac7c75b9937a495021393024d0a90c44&units=metric')
+                'http://api.openweathermap.org/data/2.5/weather?q=' + we + ',in&appid=ac7c75b9937a495021393024d0a90c44&units=metric')
             obj = n.json()
             ret = ''
             ret += str(obj['weather'][0]['description'])
